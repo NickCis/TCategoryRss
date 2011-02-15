@@ -1,0 +1,23 @@
+================ RSS de Taringa Por Categorias By NickCis=================
+LICENCIADO BAJO LA GPL V3. http://www.gnu.org/licenses/gpl-3.0.html
+Bueno, taringa no ofrece esta opcion, solo ofrece un rss normal. Por eso se usara la api de taringa para conseguir el resultado deseado.
+
+ ------------Como se Instala?----------------
+ * Nececitas una Api key de taringa: http://www.taringa.net/api/peticion-form.php (para solicitarla)
+ * Bajas el archivo rsscat.php
+ * Editas la primera linea despues de los comentarios, donde dice $apikey = "********"; #Api key de taringa. Reemplazas los asteriscos (*) con tu apikey.
+ * Subis el archivo a un servidor web.
+ 
+ ------------Como se Usa?----------------
+ 
+ * Simplemente linkeas a http://tuserver.com/rsscat.php?tipo=rss&cat=[CATEGORIA]
+ Donde [CATEGORIA] es la id de categoria. 
+ 
+ * Para obtener una lista de todas las categorias con sus repectivos ids:
+ http://tuserver.com/rsscat.php?tipo=cat
+
+
+Demo: http://ligapes2009.site90.com/rss/rsscat.php 
+Usenlo para probar, no hagan Hotlink! 
+
+Post en Taringa: http://www.taringa.net/posts/taringa/7878730/Rss-por-Categorias-de-Taringa_.html
