@@ -1,12 +1,21 @@
-================ RSS de Taringa Por Categorias By NickCis=================
+================ RSS de Taringa Por Categorias V2 By NickCis=================
+Version 2 del script
 LICENCIADO BAJO LA GPL V3. http://www.gnu.org/licenses/gpl-3.0.html
-Bueno, taringa no ofrece esta opcion, solo ofrece un rss normal. Por eso se usara la api de taringa para conseguir el resultado deseado.
+#### xml2array.php es un script con su propia licencia, cualquier duda contactar con su desarrollador: http://www.bin-co.com/php/scripts/xml2array/ ####
+
+** Intenta solucionar el problemas de la version uno. (RSS ahora incluye post y hora, como lo hace el rss oficial de taringa)
+** No nececita ApiKey
+** Problemas:
+    * Requiere un Cron job de muy poco intervalo, asi mantiene constantemente actualizada la base de datos.
+    * Muchas veces el trafico de creacion de post es tan alto, lo que provoca que algunos post se escapen, haciendo que el rss este incompleto.
 
  ------------Como se Instala?----------------
- * Nececitas una Api key de taringa: http://www.taringa.net/api/peticion-form.php (para solicitarla)
- * Bajas el archivo rsscat.php
- * Editas la primera linea despues de los comentarios, donde dice $apikey = "********"; #Api key de taringa. Reemplazas los asteriscos (*) con tu apikey.
- * Subis el archivo a un servidor web.
+ * Se nececita un servidor con base de datos Mysql. Se crea la BD
+ * Crear la tabla necesario (el archivo tablas.sql tiene las instrucciones en sql para crearla)
+ * Bajas Todos los archivos.
+ * Editas config.php , agregando el Host, Usuario, password, y nombre de la base de datos.
+ * Subis Los archivos a tu servidor.
+ * Seteas un cron job (del minimo intervalo que puedas) para cron.php
  
  ------------Como se Usa?----------------
  
@@ -17,7 +26,11 @@ Bueno, taringa no ofrece esta opcion, solo ofrece un rss normal. Por eso se usar
  http://tuserver.com/rsscat.php?tipo=cat
 
 
-Demo: http://ligapes2009.site90.com/rss/rsscat.php 
+Demo: http://rss.site90.com/v2/rsscat.php?cat=[categoria]
 Usenlo para probar, no hagan Hotlink! 
 
 Post en Taringa: http://www.taringa.net/posts/taringa/7878730/Rss-por-Categorias-de-Taringa_.html
+Link de la version 1 (usa Taringa Api): https://github.com/NickCis/TCategoryRss
+
+
+.

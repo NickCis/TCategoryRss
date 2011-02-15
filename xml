@@ -1,0 +1,8 @@
+<item>
+    <title>{title}</title>
+    <link>{link}</link>
+    <pubDate>{pubdate}</pubDate>
+    <category><![CDATA[{category}]]></category>
+    <comments>{comments}</comments>
+    <description><![CDATA[{description}]]></description>
+</item>
