@@ -21,3 +21,8 @@ Demo: http://ligapes2009.site90.com/rss/rsscat.php
 Usenlo para probar, no hagan Hotlink! 
 
 Post en Taringa: http://www.taringa.net/posts/taringa/7878730/Rss-por-Categorias-de-Taringa_.html
+
+Problemas:
+    * No muestra fecha del post, ni preview.
+
+TCategoryRss v2 intenta arreglarlo: https://github.com/NickCis/TCategoryRss/tree/v2 
